@@ -1,0 +1,7 @@
+html,body,#map{margin:0;height:100%;font-family:system-ui}
+#map{position:fixed;inset:0}
+.top{position:absolute;top:16px;left:50%;transform:translateX(-50%);width:min(92%,800px);z-index:10}
+.search{display:flex;background:#fff;border-radius:28px;padding:10px;box-shadow:0 4px 16px rgba(0,0,0,.2)}
+.search input{flex:1;border:0;outline:0;font-size:16px}
+.search button{border:0;background:#1a73e8;color:#fff;border-radius:18px;padding:10px 16px}
+#card{position:absolute;left:16px;top:80px;background:#fff;padding:16px;border-radius:16px;z-index:10;box-shadow:0 4px 16px rgba(0,0,0,.2)}
