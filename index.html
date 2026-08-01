@@ -3,19 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AryaGo</title>
+<title>AryaGo - Interactive Map Search</title>
+<link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='90'>🗺️</text></svg>">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='90'>🗺️</text></svg>">
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div id="map"></div>
-<div class="top">
-  <div class="search">
-    <input id="search" placeholder="Search Bangalore, Kochi, Mysuru...">
-    <button id="go">Go</button>
+
+<!-- Header with AryaGo branding -->
+<header class="header">
+  <div class="header-content">
+    <h1 class="logo">🗺️ AryaGo</h1>
+    <p class="tagline">Explore the World</p>
+  </div>
+</header>
+
+<!-- Search Bar -->
+<div class="search-container">
+  <div class="search-box">
+    <input id="search" type="text" placeholder="Search a place... (Tip: try 'Arya')" class="search-input">
+    <button id="go" class="search-btn">Go</button>
   </div>
 </div>
-<div id="card">Search for a place…</div>
+
+<!-- Info Card -->
+<div id="card" class="info-card">
+  <div class="card-content">
+    <p class="card-text">🔍 Search for a place to get started</p>
+  </div>
+</div>
+
+<!-- Easter Egg Modal -->
+<div id="easter-egg-modal" class="easter-egg-modal">
+  <div class="easter-egg-content">
+    <button id="close-easter-egg" class="close-btn">✕</button>
+    <div class="arya-container">
+      <img id="arya-image" src="IMG_7463.jpeg" alt="Arya" class="arya-image">
+      <div class="smile-animation">😊</div>
+    </div>
+  </div>
+</div>
 
 <script src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
 <script src="js/app.js"></script>
